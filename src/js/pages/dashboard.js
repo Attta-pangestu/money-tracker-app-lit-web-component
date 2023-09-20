@@ -50,8 +50,10 @@ const Dashboard = {
         amountExpense += item.amount;
       }
     });
-
-    document.querySelector('#transactions-card').setAttribute('content', `${transactionsHistory.length} Transaksi`);
+    
+    document
+      .querySelector('#transactions-card')
+      .setAttribute('content', `${transactionsHistory.length} Transaksi`);
     document.querySelector('#income-card').setAttribute('content', `Rp ${amountIncome}`);
     document.querySelector('#expense-card').setAttribute('content', `Rp ${amountExpense}`);
   },

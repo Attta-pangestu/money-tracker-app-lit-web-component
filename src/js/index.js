@@ -1,9 +1,8 @@
 // Import our custom CSS
 import '../scss/main.scss';
 
-
-// Import Component 
-import '../components/index' ; 
+// Import components
+import './components/index';
 
 // Import javascript file as needed
 import Dashboard from './pages/dashboard';
@@ -31,7 +30,7 @@ const initPages = () => {
 
 window.addEventListener('DOMContentLoaded', async () => {
   initPages();
-  
+
   const route = detectRoute();
   route.init();
 });
